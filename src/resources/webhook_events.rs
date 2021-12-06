@@ -141,6 +141,14 @@ pub enum EventType {
     PaymentIntentRequiresCapture,
     #[serde(rename = "payment_intent.succeeded")]
     PaymentIntentSucceeded,
+    #[serde(rename = "payment_method.attached")]
+    PaymentMethodAttached,
+    #[serde(rename = "payment_method.automatically_updated")]
+    PaymentMethodAutomaticallyUpdated,
+    #[serde(rename = "payment_method.detached")]
+    PaymentMethodDetached,
+    #[serde(rename = "payment_method.updated")]
+    PaymentMethodUpdated,
     #[serde(rename = "payout.canceled")]
     PayoutCanceled,
     #[serde(rename = "payout.created")]
@@ -167,6 +175,16 @@ pub enum EventType {
     ReviewClosed,
     #[serde(rename = "review.opened")]
     ReviewOpened,
+    #[serde(rename = "setup_intent.canceled")]
+    SetupIntentCanceled,
+    #[serde(rename = "setup_intent.created")]
+    SetupIntentCreated,
+    #[serde(rename = "setup_intent.requires_action")]
+    SetupIntentRequiresAction,
+    #[serde(rename = "setup_intent.setup_failed")]
+    SetupIntentSetupFailed,
+    #[serde(rename = "setup_intent.succeeded")]
+    SetupIntentSucceeded,
     #[serde(rename = "sigma.scheduled_query_run.created")]
     SigmaScheduledQueryRunCreated,
     #[serde(rename = "sku.created")]
